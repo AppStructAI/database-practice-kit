@@ -1,0 +1,18 @@
+AppStruct database connection planning brief
+Starting point: An existing Supabase project
+Route: Validate the Supabase connection
+
+Preparation and mapping:
+1. Ask the backend owner to confirm exposed tables, grants, Row Level Security and test accounts.
+2. Configure the project root URL and suitable client key, then inspect Get Scheme and the table fields.
+3. Configure Database Request Insert, Select and Update separately; verify the user session and actual identifier filter.
+
+Operating responsibility: The backend owner controls database exposure, policies and account setup; the app owner verifies mappings and the published build.
+First acceptance check: Read and update the two fictional requests with the intended session, then repeat a request that the backend should deny.
+
+Implementation status: Not tested.
+Actual record IDs, deployment, observations and evidence: To be recorded by the project owner.
+Keep passwords, API keys and session tokens out of this brief.
+Guide: https://blog.appstruct.ai/blog/no-code-database-integration-guide-2025#connect-supabase-to-a-no-code-builder
+Product reference: https://appstruct.ai/app-builder?utm_source=github&utm_medium=referral&utm_campaign=supabase_connection_20261113&utm_content=database_practice_repo_01__planner_brief#database-integrations
+

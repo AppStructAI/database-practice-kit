@@ -1,0 +1,18 @@
+AppStruct database connection planning brief
+Starting point: A new AppStruct dataset
+Route: Start with AppStruct tables
+
+Preparation and mapping:
+1. Define the fields, unique row identifier and permitted users.
+2. Map form values into Add row, then use Get row to retrieve the saved record.
+3. Filter Update row by the intended saved row ID and read the result back.
+
+Operating responsibility: The app owner defines the dataset, mappings, access rules and recovery behavior.
+First acceptance check: Save two requests with the same customer name. Update one by its actual ID and confirm the other stays unchanged.
+
+Implementation status: Not tested.
+Actual record IDs, deployment, observations and evidence: To be recorded by the project owner.
+Keep passwords, API keys and session tokens out of this brief.
+Guide: https://blog.appstruct.ai/blog/no-code-database-integration-guide-2025#connect-the-appstruct-table-workflow
+Product reference: https://appstruct.ai/app-builder?utm_source=github&utm_medium=referral&utm_campaign=supabase_connection_20261113&utm_content=database_practice_repo_01__planner_brief#database-integrations
+

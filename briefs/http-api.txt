@@ -1,0 +1,18 @@
+AppStruct database connection planning brief
+Starting point: An existing service or database API
+Route: Use the service’s documented HTTP API
+
+Preparation and mapping:
+1. Agree on authenticated create, read and update requests with the backend owner.
+2. Configure HTTP Request with the documented HTTPS URL, headers, JSON input and response mapping.
+3. Repeat the operation in the published app, including expired access, denied requests and interrupted saves.
+
+Operating responsibility: The service owner implements authorization, response contracts and duplicate handling; the app owner configures the client requests.
+First acceptance check: Create a fictional record through the API, retain its returned ID, update that record and verify it with a fresh read.
+
+Implementation status: Not tested.
+Actual record IDs, deployment, observations and evidence: To be recorded by the project owner.
+Keep passwords, API keys and session tokens out of this brief.
+Guide: https://blog.appstruct.ai/blog/no-code-database-integration-guide-2025#connect-an-external-database-through-an-http-api
+Product reference: https://appstruct.ai/app-builder?utm_source=github&utm_medium=referral&utm_campaign=supabase_connection_20261113&utm_content=database_practice_repo_01__planner_brief#database-integrations
+
